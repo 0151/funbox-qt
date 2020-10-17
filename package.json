@@ -2,14 +2,14 @@
   "name": "funbox-qt",
   "version": "1.0.0",
   "description": "Квалификационое задание для разработчиков HTML/CSS/JS",
-  "homepage": "http://0151.github.io/funbox-qt",
+  "homepage": "https://0151.github.io/funbox-qt/",
   "scripts": {
     "build": "webpack --config webpack.prod.js",
     "start": "webpack-dev-server --config webpack.dev.js",
     "lint": "eslint --ext .js,.ts,.tsx .",
     "test": "jest",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "husky": {
     "hooks": {
