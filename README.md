@@ -1,5 +1,7 @@
 # Funbox QT
 
+- [Level I](https://github.com/0151/funbox-qt/wiki/Level-I)
+- [Level II](https://0151.github.io/funbox-qt/)
 - Typescript, React, PostCSS
 
 ## Требования
@@ -27,3 +29,11 @@ npm run build
 ```bash
 npm start
 ```
+
+### Про техническую часть
+
+Чтобы не переусложнять структуру пропсов карточки, в проекте используется dangerouslySetInnerHTML, подразумевая, что данные приходят из безопасного источника.
+
+### Что хотелось бы добавить
+
+- [ ] Менять внешний вид карточки при фокусе с клавиатуры;
