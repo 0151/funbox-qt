@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 100;
+  src: url("./assets/fonts/exo-2-100.eot");
+  src: local("Exo 2 Thin"), local("Exo2-Thin"),
+    url("./assets/fonts/exo-2-100.eot?#iefix") format("embedded-opentype"),
+    url("./assets/fonts/exo-2-100.woff2") format("woff2"),
+    url("./assets/fonts/exo-2-100.woff") format("woff"),
+    url("./assets/fonts/exo-2-100.ttf") format("truetype"),
+    url("./assets/fonts/exo-2-100.svg#Exo2") format("svg");
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

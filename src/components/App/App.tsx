@@ -1,5 +1,5 @@
-import React from 'react'
+import React, { FC } from "react";
 
-import './App.css'
+import { Cards } from "components";
 
-export const App = () => <h1>Hello, world!</h1>
+export const App: FC = () => <Cards />;

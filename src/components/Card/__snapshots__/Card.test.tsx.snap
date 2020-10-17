@@ -1,0 +1,95 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Карточка рендерится правильно 1`] = `
+<div
+  className="card"
+>
+  <div
+    aria-checked={false}
+    className="card__outer"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+    role="checkbox"
+    tabIndex={1}
+  >
+    <div
+      className="card__inner"
+    >
+      <span
+        className="card__subtitle"
+      >
+        Сказочное заморское яство
+      </span>
+      <h2
+        className="card__title"
+      >
+        <span
+          className="card__name"
+        >
+          Нямушка
+        </span>
+        <span
+          className="card__taste"
+        >
+          с фуа-гра
+        </span>
+      </h2>
+      <ul
+        className="card__features"
+      >
+        <li
+          className="card__feature"
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "<b>10</b> порций",
+            }
+          }
+          key="<b>10</b> порций"
+        />
+        <li
+          className="card__feature"
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "мышь в подарок",
+            }
+          }
+          key="мышь в подарок"
+        />
+      </ul>
+      <span
+        className="card__weight"
+      >
+        0,5
+        <span
+          className="card__unit"
+        >
+          кг
+        </span>
+      </span>
+      <span
+        className="card__image"
+        role="img"
+      />
+    </div>
+  </div>
+  <span
+    className="card__footnote"
+  >
+    Чего сидишь? Порадуй котэ, 
+    <span
+      className="card__pseudolink"
+      onClick={[Function]}
+      role="button"
+      tabIndex={0}
+    >
+      купи
+    </span>
+    <span
+      className="card__dot"
+    >
+      .
+    </span>
+  </span>
+</div>
+`;
