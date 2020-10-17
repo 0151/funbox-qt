@@ -8,8 +8,7 @@
     "start": "webpack-dev-server --config webpack.dev.js",
     "lint": "eslint --ext .js,.ts,.tsx .",
     "test": "jest",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "npm run build && gh-pages -d dist -b deploy"
   },
   "husky": {
     "hooks": {
@@ -68,6 +67,7 @@
     "postcss-preset-env": "^6.7.0",
     "postcss-simple-vars": "^6.0.1",
     "prettier": "2.1.2",
+    "react-dev-utils": "^10.2.1",
     "style-loader": "^2.0.0",
     "terser-webpack-plugin": "^4.2.3",
     "ts-jest": "^26.4.1",

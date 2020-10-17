@@ -1,11 +1,22 @@
 const path = require('path')
 const HtmlWebPackPlugin = require('html-webpack-plugin')
+const fs = require('fs')
+
+const getPublicUrlOrPath = require('react-dev-utils/getPublicUrlOrPath')
+const appDirectory = fs.realpathSync(process.cwd())
+const resolveApp = (relativePath) => path.resolve(appDirectory, relativePath)
+
+const publicUrlOrPath = getPublicUrlOrPath(
+  process.env.NODE_ENV === 'development',
+  require(resolveApp('package.json')).homepage,
+  process.env.PUBLIC_URL
+)
 
 module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].[hash].bundle.js',
-    publicPath: '/',
+    publicPath: publicUrlOrPath,
   },
   resolve: {
     modules: ['node_modules', path.join(__dirname, 'src')],
