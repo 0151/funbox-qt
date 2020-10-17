@@ -1,6 +1,6 @@
-# Stub to start a new React project
+# Funbox QT
 
-Шаблонный репозиторий для создания React-проектов
+- Typescript, React, PostCSS
 
 ## Требования
 
@@ -9,9 +9,9 @@
 ## Установка
 
 ```bash
-git clone https://github.com/0151/react-stub.git --depth 1 my-react-project
-cd my-react-project
-npm install
+git clone https://github.com/0151/funbox-qt.git --depth 1 funbox-qt
+cd funbox-qt
+npm i
 ```
 
 ## Использование
