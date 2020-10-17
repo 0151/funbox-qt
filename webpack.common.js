@@ -5,6 +5,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].[hash].bundle.js',
+    publicPath: '/',
   },
   resolve: {
     modules: ['node_modules', path.join(__dirname, 'src')],
@@ -15,6 +16,27 @@ module.exports = {
       {
         test: /\.tsx?$/,
         use: 'ts-loader',
+      },
+      {
+        test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              //name: '[name].[ext]',
+              outputPath: 'fonts/',
+            },
+          },
+        ],
+      },
+      {
+        test: [/\.png$/, /\.jpe?g$/],
+        use: {
+          loader: 'file-loader',
+          options: {
+            outputPath: 'media',
+          },
+        },
       },
     ],
   },
